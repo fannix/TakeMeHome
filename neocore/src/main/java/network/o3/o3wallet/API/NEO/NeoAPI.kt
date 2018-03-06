@@ -317,7 +317,8 @@ class NeoNodeRPC {
 
 
     private fun generateInvokeTransactionPayload(wallet: Wallet, assets: Assets, script: String, contractAddress: String): ByteArray {
-        val inputData = getInputsNecessaryToSendAsset(NeoNodeRPC.Asset.GAS, 0.00000001, assets)
+        // need to send more than 5 gas, otherwise the transaction will fail
+        val inputData = getInputsNecessaryToSendAsset(NeoNodeRPC.Asset.GAS, 5.00000001, assets)
         val payloadPrefix = byteArrayOf(0xd1.toUByte(), 0x00.toUByte()) + script.hexStringToByteArray()
         var rawTransaction = packRawTransactionBytes(payloadPrefix, wallet, Asset.GAS,
                 inputData.payload!!,
