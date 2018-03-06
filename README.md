@@ -13,7 +13,7 @@ please take a look at the the contract project page for the codes and the addres
 
 To compile the project, you will need to install AndroidStudio.
 
-To test it, you need an android device, either with a real one or a simulated one. I already tested it with a real Samgsung Galaxy tab s3 (API 27).
+To test it, you need an android device, either with a real one or a simulated one. I already tested it with a real Samgsung Galaxy tab s3 (API 24).
 You also need a real iBeacon or a Beacon simulator. I used the locate ios app which is developed by Radius Networks,
 and used the Null iBeacon (id1: 00000000-0000-0000-0000-000000000000 id2: 0 id3: 0) to trigger beacon events.
 
