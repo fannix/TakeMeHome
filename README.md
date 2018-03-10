@@ -20,7 +20,7 @@ and used the Null iBeacon (id1: 00000000-0000-0000-0000-000000000000 id2: 0 id3:
 To verify the app actually submit location and get reward, you can look into its storage, which saves the state of the contract.
 For example, we can open the TakeMeHome app and then simulate an beacon. 
 This will trigger a location submission event. We can then verify that 
-the contract send reward to `0000000000000000000000000000000000000001` (Our example wallet address used in the app):
+the contract send reward to `0000000000000000000000000000000000000001` (our example wallet address used in the app):
 
 ```bash
 
@@ -36,6 +36,6 @@ It should return non null result like:
 
 `{"jsonrpc":"2.0","id":15,"result":"01"}`
 
-This means that we get 1 token reward.
+This means that we did get 1 token reward by submitting the location.
 
 If you want to see the app in action but don't want to install and compile the codes, you can take a look at <https://youtu.be/l5xETZ_naJw>
