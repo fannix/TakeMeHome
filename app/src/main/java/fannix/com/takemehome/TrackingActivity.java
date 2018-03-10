@@ -181,7 +181,7 @@ public class TrackingActivity extends AppCompatActivity implements BeaconConsume
 class Task extends AsyncTask<Params, Void, Void> {
 
     // This is the wif used for transaction
-    private static String wif = "5KfFjSyuuuNEMqvbGxxca8GNGDzDKyTK44NgSgZjVokqmQ4zY12";
+    private static String wif = "YOUR_WIF";
     /**
      * Override this method to perform a computation on a background thread. The
      * specified parameters are the parameters passed to {@link #execute}
